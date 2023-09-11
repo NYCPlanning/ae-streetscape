@@ -1,2 +1,3 @@
-# ae-design-system
-Our design system implementation. This repo outputs a Storybook site as well as an NPM package of reusable components and tokens.
+# Design System
+
+This repo contains our primary design system implementation. For now, it contains a basic React template [generated using Vite](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) with the `react-ts` template.

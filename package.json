@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "npx eslint . --ext ts,tsx,js,jsx",
+    "lint": "eslint . --ext ts,tsx,js,jsx",
+    "typecheck": "tsc",
     "preview": "vite preview",
     "prepare": "husky install"
   },
@@ -32,6 +33,6 @@
     "vite": "^4.4.5"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": "npm run lint -- --fix"
+    "*.{ts,tsx}": ["bash -c 'npm run typecheck'", "npm run lint -- --fix"]
   }
 }

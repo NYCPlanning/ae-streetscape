@@ -1,4 +1,6 @@
+import React from "react";
 import type { Preview } from "@storybook/react";
+import { ChakraBaseProvider } from "@chakra-ui/react";
 
 const preview: Preview = {
   parameters: {
@@ -10,6 +12,13 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <ChakraBaseProvider theme={{}}>
+        <Story />
+      </ChakraBaseProvider>
+    ),
+  ],
 };
 
 export default preview;

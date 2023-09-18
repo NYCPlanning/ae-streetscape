@@ -14,7 +14,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <ChakraBaseProvider theme={{}}>
+      <ChakraBaseProvider>
         <Story />
       </ChakraBaseProvider>
     ),

@@ -22,19 +22,29 @@ import { colors as semanticColors } from "../theme/semantic-tokens/colors"
   <ColorItem
     title="Primary"
     colors={{
-      50: colors.teal[50],
-      500: colors.teal[500],
-      600: colors.teal[600],
-      700: colors.teal[700],
+      "50": colors.teal[50],
+      "500": colors.teal[500],
+      "600": colors.teal[600],
+      "700": colors.teal[700],
     }}
   />
   <ColorItem
     title="Brand"
-    colors={semanticColors.brand}
+    colors={{
+      "50": semanticColors["brand.50"],
+      "100": semanticColors["brand.100"],
+      "800": semanticColors["brand.800"],
+      "900": semanticColors["brand.900"],
+    }}
   />
   <ColorItem
-    title="States"
-    colors={semanticColors.states}
+    title="State"
+    colors={{
+      "error": semanticColors["state.error"],
+      "warning": semanticColors["state.warning"],
+      "success": semanticColors["state.success"],
+      "focus": semanticColors["state.focus"],
+    }}
   />
 </ColorPalette>
 

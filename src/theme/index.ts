@@ -1,4 +1,4 @@
-import { ThemeConfig } from "@chakra-ui/react";
+import { ThemeConfig, ChakraTheme } from "@chakra-ui/react";
 import { tokens } from "./tokens";
 import { semanticTokens } from "./semantic-tokens";
 import { components } from "./components";
@@ -7,7 +7,7 @@ const config: ThemeConfig = {
   cssVarPrefix: "dcp",
 };
 
-export const theme = {
+export const theme: ChakraTheme = {
   components,
   config,
   direction: "ltr",
@@ -15,5 +15,3 @@ export const theme = {
   semanticTokens,
   ...tokens,
 };
-
-export type Theme = typeof theme;

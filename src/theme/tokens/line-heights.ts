@@ -1,3 +1,3 @@
 export const lineHeights = {
-  base: 1.5,
+  regular: 1.5,
 };

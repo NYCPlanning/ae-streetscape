@@ -5,7 +5,7 @@ export const styles: Styles = {
     body: {
       fontFamily: "body",
       color: "gray.600",
-      lineHeight: "base",
+      lineHeight: "regular",
       fontWeight: "regular",
     },
   },

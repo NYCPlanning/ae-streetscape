@@ -1,6 +1,6 @@
-import { Meta, Typeset } from '@storybook/blocks';
+import { Meta, Unstyled } from '@storybook/blocks';
 import { tokens } from "../theme/tokens"
-import { ThemeProvider } from "../ThemeProvider"
+import { ThemeBlock } from "../../.storybook/ThemeBlock"
 import { Text, HStack, VStack } from "@chakra-ui/react";
 import { theme } from "../theme";
 
@@ -14,7 +14,7 @@ export const sampleText = 'The quick brown fox jumps over the lazy dog';
 Our primary font family is `Helvetica Neue`. There are two font family tokens that both refer to this family: `body` and `heading`.
 
 ## Font Sizes
-<ThemeProvider>
+<ThemeBlock>
   <VStack align="start">
     <Text fontSize="sm">sm: {sampleText}</Text>
     <Text fontSize="md">md: {sampleText}</Text>
@@ -24,17 +24,17 @@ Our primary font family is `Helvetica Neue`. There are two font family tokens th
     <Text fontSize="3xl">3xl: {sampleText}</Text>
     <Text fontSize="4xl">4xl: {sampleText}</Text>
   </VStack>
-</ThemeProvider>
+</ThemeBlock>
 
 ## Font Weights
-<ThemeProvider>
+<ThemeBlock>
   <HStack>
     <Text fontSize="3xl" fontWeight="bold">Bold</Text>
     <Text fontSize="3xl" fontWeight="medium">Medium</Text>
     <Text fontSize="3xl" fontWeight="regular">Regular</Text>
-    <Text fontSize="3xl" fontWeight="light">Light</Text>
+    <Text fontSize="3xl" fontWeight="light" fontFamily="body">Light</Text>
   </HStack>
-</ThemeProvider>
+</ThemeBlock>
 
 ## Line Height
 We have one token for line height: `regular`. This token is used for all text and will assign the line height to be 150% of the text's font size.
@@ -63,7 +63,7 @@ body: {
 ```
 
 ### Our Text Styles
-<ThemeProvider>
+<ThemeBlock>
   <VStack align="start">
     <Text textStyle="emphasis">emphasis: {sampleText}</Text>
     <Text textStyle="lead">lead: {sampleText}</Text>
@@ -71,6 +71,6 @@ body: {
     <Text textStyle="body">body: {sampleText}</Text>
     <Text textStyle="micro">micro: {sampleText}</Text>
   </VStack>
-</ThemeProvider>
+</ThemeBlock>
 
 

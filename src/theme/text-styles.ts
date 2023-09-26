@@ -2,27 +2,27 @@ import { SystemStyleObjectRecord } from "@chakra-ui/react";
 
 export const textStyles: SystemStyleObjectRecord = {
   emphasis: {
-    font: "body",
+    fontFamily: "body",
     fontSize: "3xl",
     fontWeight: "light",
   },
   lead: {
-    font: "body",
+    fontFamily: "body",
     fontSize: "xl",
     fontWeight: "regular",
   },
   large: {
-    font: "body",
+    fontFamily: "body",
     fontSize: "lg",
     fontWeight: "regular",
   },
   body: {
-    font: "body",
+    fontFamily: "body",
     fontSize: "md",
     fontWeight: "regular",
   },
   micro: {
-    font: "body",
+    fontFamily: "body",
     fontSize: "sm",
     fontWeight: "regular",
   },

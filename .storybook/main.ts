@@ -21,5 +21,23 @@ const config: StorybookConfig = {
       disable: true,
     },
   },
+  typescript: {
+    reactDocgen: "react-docgen-typescript",
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      shouldRemoveUndefinedFromOptional: true,
+      skipChildrenPropWithoutDoc: false,
+      propFilter: (prop) =>
+        prop.parent !== undefined &&
+        !["__css", "sx", "css", "as", "apply"].includes(prop.name) &&
+        (!prop.parent.fileName.includes("node_modules") ||
+          (prop.parent.fileName.includes("node_modules") &&
+            prop.parent.fileName.includes("node_modules/@chakra-ui/") &&
+            !prop.parent.fileName.includes(
+              "node_modules/@chakra-ui/styled-system",
+            ) &&
+            !prop.parent.fileName.includes("node_modules/@chakra-ui/system"))),
+    },
+  },
 };
 export default config;

@@ -24,8 +24,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^7.4.1",
     "@chakra-ui/cli": "^2.4.1",
+    "@chakra-ui/storybook-addon": "^5.0.1",
+    "@storybook/addon-a11y": "^7.4.1",
     "@storybook/addon-essentials": "^7.4.1",
     "@storybook/addon-interactions": "^7.4.1",
     "@storybook/addon-links": "^7.4.1",

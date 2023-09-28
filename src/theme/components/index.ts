@@ -1,1 +1,5 @@
-export const components = {};
+import { buttonTheme } from "./button";
+
+export const components = {
+  Button: buttonTheme,
+};

@@ -1,0 +1,50 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import { colors } from "../theme/tokens/colors"
+import { colors as semanticColors } from "../theme/semantic-tokens/colors"
+
+<Meta title="Tokens/Colors" />
+
+# Colors
+
+<ColorPalette>
+  <ColorItem
+    title="White"
+    colors={[colors.white]}
+  />
+  <ColorItem
+    title="Gray"
+    colors={colors.gray}
+  />
+  <ColorItem
+    title="Teal"
+    colors={colors.teal}
+  />
+  <ColorItem
+    title="Primary"
+    colors={{
+      "50": colors.teal[50],
+      "500": colors.teal[500],
+      "600": colors.teal[600],
+      "700": colors.teal[700],
+    }}
+  />
+  <ColorItem
+    title="Brand"
+    colors={{
+      "50": semanticColors["brand.50"],
+      "100": semanticColors["brand.100"],
+      "800": semanticColors["brand.800"],
+      "900": semanticColors["brand.900"],
+    }}
+  />
+  <ColorItem
+    title="State"
+    colors={{
+      "error": semanticColors["state.error"],
+      "warning": semanticColors["state.warning"],
+      "success": semanticColors["state.success"],
+      "focus": semanticColors["state.focus"],
+    }}
+  />
+</ColorPalette>
+

@@ -1,0 +1,74 @@
+import { Meta, Unstyled } from '@storybook/blocks';
+import { ThemeBlock } from "../../.storybook/ThemeBlock";
+import { Text, HStack, VStack } from "@chakra-ui/react";
+
+<Meta title="Tokens/Typography" />
+
+export const sampleText = 'The quick brown fox jumps over the lazy dog';
+
+# Typography
+
+## Font Family
+Our primary font family is `Helvetica Neue`. There are two font family tokens that both refer to this family: `body` and `heading`.
+
+## Font Sizes
+<ThemeBlock>
+  <VStack align="start">
+    <Text fontSize="sm">sm: {sampleText}</Text>
+    <Text fontSize="md">md: {sampleText}</Text>
+    <Text fontSize="lg">lg: {sampleText}</Text>
+    <Text fontSize="xl">xl: {sampleText}</Text>
+    <Text fontSize="2xl">2x: {sampleText}</Text>
+    <Text fontSize="3xl">3xl: {sampleText}</Text>
+    <Text fontSize="4xl">4xl: {sampleText}</Text>
+  </VStack>
+</ThemeBlock>
+
+## Font Weights
+<ThemeBlock>
+  <HStack>
+    <Text fontSize="3xl" fontWeight="bold">Bold</Text>
+    <Text fontSize="3xl" fontWeight="medium">Medium</Text>
+    <Text fontSize="3xl" fontWeight="regular">Regular</Text>
+    <Text fontSize="3xl" fontWeight="light" fontFamily="body">Light</Text>
+  </HStack>
+</ThemeBlock>
+
+## Line Height
+We have one token for line height: `regular`. This token is used for all text and will assign the line height to be 150% of the text's font size.
+
+## Text Styles
+
+Text styles refer to names for common combinations of values for these css properties:
+
+* Font family, weight, and size
+* Line height
+* Letter spacing
+* Text decoration (strikethrough and underline)
+* Text transform (uppercase, lowercase, and capitalization)
+
+They make it easy for developers to quickly apply all of these styles to a piece of text. For instance, this code:
+```
+<Text textStyle="body">Hello, world.</Text>
+```
+will assign the `body` text style to the text. `body` assigns these token values to the corresponding style properties:
+```
+body: {
+  fontFamily: "body",
+  fontSize: "md",
+  fontWeight: "regular",
+},
+```
+
+### Our Text Styles
+<ThemeBlock>
+  <VStack align="start">
+    <Text textStyle="emphasis">emphasis: {sampleText}</Text>
+    <Text textStyle="lead">lead: {sampleText}</Text>
+    <Text textStyle="large">large: {sampleText}</Text>
+    <Text textStyle="body">body: {sampleText}</Text>
+    <Text textStyle="micro">micro: {sampleText}</Text>
+  </VStack>
+</ThemeBlock>
+
+

@@ -1,10 +1,10 @@
 import { ChakraBaseProvider } from "@chakra-ui/react";
 import { theme } from "./theme";
 
-interface ThemeProviderProps {
+interface StreetscapeProviderProps {
   children: React.ReactNode;
 }
 
-export const ThemeProvider = ({ children }: ThemeProviderProps) => (
+export const StreetscapeProvider = ({ children }: StreetscapeProviderProps) => (
   <ChakraBaseProvider theme={theme}>{children}</ChakraBaseProvider>
 );

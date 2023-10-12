@@ -1,5 +1,6 @@
 import { theme } from "./theme";
 import { Button } from "@chakra-ui/react";
-import { ThemeProvider } from "./ThemeProvider";
+import { StreetscapeProvider } from "./StreetscapeProvider";
 
-export { theme, Button, ThemeProvider };
+export * from "@chakra-ui/layout";
+export { theme, Button, StreetscapeProvider };

@@ -7,7 +7,6 @@ export const colors = {
   "brand.100": "#FBE4D7",
   "brand.800": "#D96B27",
   "brand.900": "#C85124",
-  "gray.700": "#2D3748",
   "state.error": "#D13823",
   "state.warning": "#ECC94B",
   "state.success": "#25855A",

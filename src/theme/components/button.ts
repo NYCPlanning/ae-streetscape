@@ -55,6 +55,7 @@ export const buttonTheme = defineStyleConfig({
         borderColor: "primary.600",
         color: "gray.700",
         opacity: 0.64,
+        pointerEvents: "none",
       },
       _hover: {
         backgroundColor: "white",

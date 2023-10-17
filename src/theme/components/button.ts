@@ -2,9 +2,7 @@ import { defineStyleConfig } from "@chakra-ui/react";
 
 export const buttonTheme = defineStyleConfig({
   baseStyle: {
-    backgroundColor: "primary.600",
     borderRadius: "base",
-    color: "white",
     px: 6,
     py: 3,
   },
@@ -21,6 +19,8 @@ export const buttonTheme = defineStyleConfig({
   },
   variants: {
     primary: {
+      backgroundColor: "primary.600",
+      color: "white",
       // TODO: Refactor setting boxShadow tokens
       boxShadow: "0 1.5 1.5 0 rgba(35, 78, 82, 0.08)",
       _disabled: {
@@ -38,7 +38,10 @@ export const buttonTheme = defineStyleConfig({
         fontWeight: "medium",
       },
       _active: {
-        boxShadow: "0 .25 .25 0 rgba(0, 0, 0, 0.08)",
+        backgroundColor: "primary.500",
+        border: "none",
+        boxShadow:
+          "0px 4px 4px 0px rgba(0, 0, 0, 0.08) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.08) inset, 4px 0px 4px 0px rgba(0, 0, 0, 0.08) inset, -4px 0px 4px 0px rgba(0, 0, 0, 0.08) inset;",
         color: "white",
         fontWeight: "medium",
         textDecorationLine: "underline",
@@ -67,7 +70,9 @@ export const buttonTheme = defineStyleConfig({
         fontWeight: "medium",
       },
       _active: {
-        boxShadow: "0 .25 .25 0 rgba(0, 0, 0, 0.08)",
+        background: "rgba(43, 119, 120, 0.04)",
+        boxShadow:
+          "0px 4px 4px 0px rgba(0, 0, 0, 0.08) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.08) inset, 4px 0px 4px 0px rgba(0, 0, 0, 0.08) inset, -4px 0px 4px 0px rgba(0, 0, 0, 0.08) inset",
         color: "gray.700",
         fontWeight: "medium",
         textDecorationLine: "underline",

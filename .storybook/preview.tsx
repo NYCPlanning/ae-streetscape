@@ -1,6 +1,6 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
-import { ThemeProvider } from "../src/ThemeProvider";
+import { StreetscapeProvider } from "../src/StreetscapeProvider";
 
 const preview: Preview = {
   parameters: {
@@ -14,9 +14,9 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <ThemeProvider>
+      <StreetscapeProvider>
         <Story />
-      </ThemeProvider>
+      </StreetscapeProvider>
     ),
   ],
 };

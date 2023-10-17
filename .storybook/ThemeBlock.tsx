@@ -1,6 +1,6 @@
 import React from "react";
 import { Unstyled } from "@storybook/blocks";
-import { ThemeProvider } from "../src/ThemeProvider";
+import { StreetscapeProvider } from "../src/StreetscapeProvider";
 
 interface ThemeBlockProps {
   children: React.ReactNode;
@@ -8,6 +8,6 @@ interface ThemeBlockProps {
 
 export const ThemeBlock = ({ children }: ThemeBlockProps) => (
   <Unstyled>
-    <ThemeProvider>{children}</ThemeProvider>
+    <StreetscapeProvider>{children}</StreetscapeProvider>
   </Unstyled>
 );

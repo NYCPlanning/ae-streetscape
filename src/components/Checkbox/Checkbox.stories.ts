@@ -15,10 +15,22 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Base: Story = {
+export const Medium: Story = {
   args: {
     variant: "base",
     size: "md",
     isChecked: false,
+    isDisabled: false,
+    children: "Medium checkbox label",
+  },
+};
+
+export const Small: Story = {
+  args: {
+    variant: "base",
+    size: "sm",
+    isChecked: false,
+    isDisabled: false,
+    children: "Small checkbox label",
   },
 };

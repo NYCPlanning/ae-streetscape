@@ -8,28 +8,42 @@ const baseStyleControl = defineStyle(() => {
   return {
     borderRadius: "2px", // change the border radius of the control
     border: "2px solid",
-    color: "gray.700",
-    _disabled: {
+    borderColor: "gray.700",
+    flexShrink: 0,
+    backgroundColor: "white",
+    color: "white",
+    gap: "10px",
+    _checked: {
+      padding: "2px",
+      borderColor: "primary.500",
       backgroundColor: "primary.500",
+    },
+    _hover: {
+      padding: "2px",
+      borderColor: "brand.800",
+      backgroundColor: "brand.800",
       color: "white",
-      opacity: 0.64,
-      pointerEvents: "none",
+    },
+    _disabled: {
+      backgroundColor: "gray.300",
+      borderColor: "gray.400",
+      color: "gray.400",
     },
   };
 });
 
 const baseStyleContainer = defineStyle({
-  _disabled: { cursor: "not-allowed" },
+  // _disabled: { cursor: "not-allowed" },
 });
 
 const baseStyleLabel = defineStyle({
-  userSelect: "none",
-  _disabled: { opacity: 0.4 },
+  // userSelect: "none",
+  // _disabled: { opacity: 0.4 },
 });
 
 const baseStyleIcon = defineStyle({
-  transitionProperty: "transform",
-  transitionDuration: "normal",
+  // transitionProperty: "transform",
+  // transitionDuration: "normal",
 });
 
 // Combine the 4 components of the checkbox
@@ -43,13 +57,11 @@ const baseStyle = definePartsStyle(() => ({
 const sizes = {
   sm: definePartsStyle({
     control: { boxSize: "24px" }, // this value includes the border, making it a 20px box with a 2px border
+    label: { fontSize: "sm" },
   }),
   md: definePartsStyle({
     control: { boxSize: "28px" }, // this value includes the border, making it a 24px box with a 2px border
-    label: defineStyle({
-      fontSize: "2xl",
-      marginLeft: 6,
-    }),
+    label: { fontSize: "md" },
   }),
 };
 

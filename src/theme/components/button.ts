@@ -79,5 +79,8 @@ export const buttonTheme = defineStyleConfig({
       },
     },
   },
-  defaultProps: {},
+  defaultProps: {
+    variant: "primary",
+    size: "md",
+  },
 });

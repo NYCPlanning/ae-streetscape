@@ -44,11 +44,11 @@ const baseStyle = definePartsStyle(() => ({
 
 const sizes = {
   sm: definePartsStyle({
-    control: { boxSize: "24px" }, // this value includes the border, making it a 20px box with a 2px border
+    control: { boxSize: 6 }, // this value includes the border, making it a 20px box with a 2px border
     label: { fontSize: "sm" },
   }),
   md: definePartsStyle({
-    control: { boxSize: "28px" }, // this value includes the border, making it a 24px box with a 2px border
+    control: { boxSize: 7 }, // this value includes the border, making it a 24px box with a 2px border
     label: { fontSize: "md" },
   }),
 };

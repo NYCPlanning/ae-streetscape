@@ -9,17 +9,13 @@ const baseStyleControl = defineStyle(() => {
     borderRadius: "2px", // change the border radius of the control
     border: "2px solid",
     borderColor: "gray.700",
-    flexShrink: 0,
     backgroundColor: "white",
     color: "white",
-    gap: "10px",
     _checked: {
-      padding: "2px",
       borderColor: "primary.500",
       backgroundColor: "primary.500",
     },
     _hover: {
-      padding: "2px",
       borderColor: "brand.800",
       backgroundColor: "brand.800",
       color: "white",
@@ -32,19 +28,11 @@ const baseStyleControl = defineStyle(() => {
   };
 });
 
-const baseStyleContainer = defineStyle({
-  // _disabled: { cursor: "not-allowed" },
-});
+const baseStyleContainer = defineStyle({});
 
-const baseStyleLabel = defineStyle({
-  // userSelect: "none",
-  // _disabled: { opacity: 0.4 },
-});
+const baseStyleLabel = defineStyle({});
 
-const baseStyleIcon = defineStyle({
-  // transitionProperty: "transform",
-  // transitionDuration: "normal",
-});
+const baseStyleIcon = defineStyle({});
 
 // Combine the 4 components of the checkbox
 const baseStyle = definePartsStyle(() => ({
@@ -69,11 +57,12 @@ const variants = {
   base: {},
 };
 
-const defaultProps = {};
-
 export const checkboxTheme = defineMultiStyleConfig({
   baseStyle,
   sizes,
   variants,
-  defaultProps,
+  defaultProps: {
+    variant: "base",
+    size: "md",
+  },
 });

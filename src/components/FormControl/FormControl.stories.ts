@@ -19,7 +19,5 @@ export const Base: Story = {
   args: {
     isRequired: true,
     isInvalid: false,
-    size: "md",
-    variant: "base",
   },
 };

@@ -18,10 +18,20 @@ const baseStyle = definePartsStyle({
     px: 3,
     border: "1px solid",
     borderColor: "gray.400",
+    color: "teal.400",
     // TODO - fill in pseudo class styles below
-    _hover: {},
-    _invalid: {},
-    _focusVisible: {},
+    _hover: {
+      borderColor: "brand.800",
+    },
+    _invalid: {
+      border: "2px solid",
+      borderColor: "state.error",
+    },
+    _focusVisible: {
+      border: "2px solid",
+      borderColor: "state.focus",
+      color: "gray.600",
+    },
     _disabled: {},
   },
 });

@@ -11,7 +11,12 @@ const { definePartsStyle, defineMultiStyleConfig } =
 
 // const baseStyleIcon = defineStyle({});
 
-const baseStyle = definePartsStyle({});
+const baseStyle = definePartsStyle({
+  text: {
+    color: "state.error",
+    fontSize: "md",
+  },
+});
 
 export const formErrorTheme = defineMultiStyleConfig({
   baseStyle,

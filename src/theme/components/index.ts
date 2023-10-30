@@ -4,6 +4,8 @@ import { checkboxTheme } from "./checkbox";
 import { switchTheme } from "./switch";
 import { inputTheme } from "./input";
 import { formControlTheme } from "./form-control";
+import { formLabelTheme } from "./form-label";
+import { formErrorTheme } from "./form-error";
 
 export const components = {
   Accordion: accordionTheme,
@@ -12,4 +14,6 @@ export const components = {
   Switch: switchTheme,
   Input: inputTheme,
   FormControl: formControlTheme,
+  FormError: formErrorTheme,
+  FormLabel: formLabelTheme,
 };

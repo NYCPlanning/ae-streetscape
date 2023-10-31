@@ -9,7 +9,7 @@ const baseStyleContainer = defineStyle({});
 const baseStyleThumb = defineStyle({
   borderRadius: "100px",
   bg: "white",
-  boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.08)",
+  boxShadow: "0 0.25 0.25 0 rgba(0, 0, 0, 0.08)",
   flexShrink: "0",
 });
 
@@ -36,28 +36,22 @@ const baseStyle = definePartsStyle(() => ({
 
 const sizes = {
   sm: definePartsStyle({
-    container: { width: "28px", height: "16px" },
+    container: { width: 7, height: 4 },
     track: {
-      width: "12px",
-      height: "12px",
-      padding: "2px 14px 2px 2px",
-      _checked: {
-        padding: "2px 2px 2px 14px",
-      },
+      width: "28px",
+      height: 3,
+      padding: 0.5,
     },
-    thumb: { width: "12px", height: "12px" },
+    thumb: { width: 3, height: 3 },
   }),
   lg: definePartsStyle({
-    container: { width: "36px", height: "20px" },
+    container: { width: 9, height: 5 },
     track: {
-      width: "16px",
-      height: "16px",
-      padding: "2px 18px 2px 2px",
-      _checked: {
-        padding: "2px 2px 2px 18px",
-      },
+      width: "34px",
+      height: 4,
+      padding: 0.5,
     },
-    thumb: { width: "16px", height: "16px" },
+    thumb: { width: 4, height: 4 },
   }),
 };
 

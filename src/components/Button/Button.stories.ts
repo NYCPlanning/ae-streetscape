@@ -20,7 +20,7 @@ export const Primary: Story = {
   args: {
     variant: "primary",
     size: "md",
-    children: "Btn",
+    children: "Primary Btn",
   },
 };
 

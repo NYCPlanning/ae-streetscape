@@ -1,4 +1,3 @@
-// import { defineStyleConfig } from "@chakra-ui/react";
 import { inputAnatomy as parts } from "@chakra-ui/anatomy";
 import { createMultiStyleConfigHelpers } from "@chakra-ui/styled-system";
 
@@ -13,13 +12,14 @@ const baseStyle = definePartsStyle({
   },
   field: {
     // Set default width to full (100%) so input takes width of parent. Chakra default theme does this as well.
-    width: "full",
-    borderRadius: "base",
-    px: 3,
+    background: "white",
     border: "1px solid",
     borderColor: "gray.400",
-    color: "teal.400",
-    // TODO - fill in pseudo class styles below
+    borderRadius: "base",
+    color: "white",
+    padding: "8px 12px",
+    px: 3,
+    width: "full",
     _hover: {
       borderColor: "brand.800",
     },
@@ -32,7 +32,11 @@ const baseStyle = definePartsStyle({
       borderColor: "state.focus",
       color: "gray.600",
     },
-    _disabled: {},
+    _disabled: {
+      border: "1px solid",
+      borderColor: "gray.400",
+      background: "gray.100",
+    },
   },
 });
 
@@ -51,11 +55,8 @@ const sizes = {
 export const inputTheme = defineMultiStyleConfig({
   baseStyle,
   sizes,
-  variants: {
-    base: {},
-  },
   defaultProps: {
     size: "md",
-    variant: "base",
+    variant: undefined,
   },
 });

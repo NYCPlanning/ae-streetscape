@@ -25,16 +25,38 @@ type Story = StoryObj<typeof meta>;
 
 export const Base: Story = {
   args: {
-    isRequired: true,
+    isRequired: false,
     isInvalid: false,
   },
   render: (args) => (
-    <FormControl
-      id="input-component"
-      // Props should reference args, otherwise changes to StoryBook controls will not be reflected
-      isRequired={args.isRequired}
-      isInvalid={args.isInvalid}
-    >
+    <FormControl id="input-component" {...args}>
+      <FormLabel>Input Label</FormLabel>
+      <Input placeholder="Placeholder Text" />
+      <FormErrorMessage>This is an error message.</FormErrorMessage>
+    </FormControl>
+  ),
+};
+
+export const Disabled: Story = {
+  args: {
+    isDisabled: true,
+    isRequired: false,
+  },
+  render: (args) => (
+    <FormControl id="input-component" {...args}>
+      <FormLabel>Input Label</FormLabel>
+      <Input placeholder="Placeholder Text" />
+      <FormErrorMessage>This is an error message.</FormErrorMessage>
+    </FormControl>
+  ),
+};
+
+export const Error: Story = {
+  args: {
+    isInvalid: true,
+  },
+  render: (args) => (
+    <FormControl id="input-component" {...args}>
       <FormLabel>Input Label</FormLabel>
       <Input placeholder="Placeholder Text" />
       <FormErrorMessage>This is an error message.</FormErrorMessage>

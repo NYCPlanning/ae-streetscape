@@ -1,26 +1,48 @@
 import { switchAnatomy } from "@chakra-ui/anatomy";
 import { createMultiStyleConfigHelpers, defineStyle } from "@chakra-ui/react";
+import { calc, cssVar } from "@chakra-ui/theme-tools";
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(switchAnatomy.keys);
 
-const baseStyleContainer = defineStyle({});
+const $width = cssVar("switch-track-width");
+const $height = cssVar("switch-track-height");
+const $diff = cssVar("switch-track-diff");
+const diffValue = calc.subtract($width, $height);
+const $translateX = cssVar("switch-thumb-x");
+
+const baseStyleContainer = defineStyle({
+  [$diff.variable]: diffValue,
+  [$translateX.variable]: $diff.reference,
+  _rtl: {
+    [$translateX.variable]: calc($diff).negate().toString(),
+  },
+});
 
 const baseStyleThumb = defineStyle({
-  borderRadius: "100px",
+  borderRadius: "full",
   bg: "white",
+  transitionProperty: "transform",
+  transitionDuration: "normal",
   boxShadow: "0 0.25 0.25 0 rgba(0, 0, 0, 0.08)",
-  flexShrink: "0",
+  width: [$height.reference],
+  height: [$height.reference],
+  _checked: {
+    transform: `translateX(${$translateX.reference})`,
+  },
 });
 
 const baseStyleTrack = defineStyle({
   bg: "gray.700",
   alignItems: "center",
-  flexShrink: "0",
-  borderRadius: "100px",
+  width: [$width.reference],
+  height: [$height.reference],
+  p: "0.5",
+  borderRadius: "full",
+  transitionProperty: "common",
+  transitionDuration: "fast",
   _checked: {
     bg: "primary.500",
-    justifyContent: "flex-end",
   },
   _disabled: {
     bg: "gray.300",
@@ -36,22 +58,16 @@ const baseStyle = definePartsStyle(() => ({
 
 const sizes = {
   sm: definePartsStyle({
-    container: { width: 7, height: 4 },
-    track: {
-      width: "28px",
-      height: 3,
-      padding: 0.5,
+    container: {
+      [$width.variable]: "sizes.6",
+      [$height.variable]: "sizes.4",
     },
-    thumb: { width: 3, height: 3 },
   }),
   lg: definePartsStyle({
-    container: { width: 9, height: 5 },
-    track: {
-      width: "34px",
-      height: 4,
-      padding: 0.5,
+    container: {
+      [$width.variable]: "sizes.8",
+      [$height.variable]: "sizes.5",
     },
-    thumb: { width: 4, height: 4 },
   }),
 };
 

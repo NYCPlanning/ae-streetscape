@@ -25,7 +25,6 @@ export const Base: Story = {
   args: {
     placeholder: "Placeholder Text",
     size: "md",
-    variant: "base",
   },
 };
 
@@ -33,7 +32,6 @@ export const Invalid: Story = {
   args: {
     placeholder: "Placeholder Text",
     size: "md",
-    variant: "base",
     isInvalid: true,
   },
 };
@@ -42,7 +40,6 @@ export const Disabled: Story = {
   args: {
     placeholder: "Placeholder Text",
     size: "md",
-    variant: "base",
     isDisabled: true,
   },
 };

@@ -17,7 +17,7 @@ const baseStyle = definePartsStyle({
     borderColor: "gray.400",
     borderRadius: "base",
     color: "white",
-    padding: "8px 12px",
+    py: 2,
     px: 3,
     width: "full",
     _hover: {
@@ -55,8 +55,11 @@ const sizes = {
 export const inputTheme = defineMultiStyleConfig({
   baseStyle,
   sizes,
+  variants: {
+    base: {},
+  },
   defaultProps: {
     size: "md",
-    variant: undefined,
+    variant: "base",
   },
 });

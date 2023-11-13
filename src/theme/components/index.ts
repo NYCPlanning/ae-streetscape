@@ -14,7 +14,7 @@ export const components = {
   Checkbox: checkboxTheme,
   Switch: switchTheme,
   Input: inputTheme,
-  FormControl: formControlTheme,
+  Form: formControlTheme,
   FormError: formErrorTheme,
   FormLabel: formLabelTheme,
   Select: selectTheme,

@@ -16,7 +16,7 @@ const baseStyle = definePartsStyle({
     border: "1px solid",
     borderColor: "gray.400",
     borderRadius: "base",
-    color: "white",
+    color: "gray.600",
     py: 2,
     px: 3,
     width: "full",
@@ -30,7 +30,6 @@ const baseStyle = definePartsStyle({
     _focusVisible: {
       border: "2px solid",
       borderColor: "state.focus",
-      color: "gray.600",
     },
     _disabled: {
       border: "1px solid",

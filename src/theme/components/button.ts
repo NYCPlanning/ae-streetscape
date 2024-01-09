@@ -5,16 +5,23 @@ export const buttonTheme = defineStyleConfig({
     borderRadius: "base",
     px: 6,
     py: 3,
+    whiteSpace: "normal",
   },
   sizes: {
     sm: {
       fontSize: "sm",
+      minH: 11,
+      minW: 11,
     },
     md: {
       fontSize: "md",
+      minH: 12,
+      minW: 12,
     },
     lg: {
       fontSize: "lg",
+      minH: 14,
+      minW: 14,
     },
   },
   variants: {
@@ -49,13 +56,21 @@ export const buttonTheme = defineStyleConfig({
     },
     secondary: {
       backgroundColor: "white",
-      border: "2px solid",
+      borderWidth: "2px",
+      borderStyle: "solid",
       borderColor: "primary.600",
       boxShadow: "0 1.5 1.5 0 rgba(44, 122, 123, 0.04)",
       color: "gray.700",
+      ".chakra-button__group[data-attached][data-orientation=horizontal] > &:not(:last-of-type)":
+        { borderRightWidth: "1px" },
+      ".chakra-button__group[data-attached][data-orientation=horizontal] > &:last-of-type":
+        { borderLeftWidth: "1px" },
+      ".chakra-button__group[data-attached][data-orientation=vertical] > &:not(:last-of-type)":
+        { borderBottomtWidth: "1px" },
+      ".chakra-button__group[data-attached][data-orientation=vertical] > &:last-of-type":
+        { borderTopWidth: "1px" },
       _disabled: {
         backgroundColor: "gray.50",
-        border: "2px solid",
         borderColor: "primary.600",
         color: "gray.700",
         opacity: 0.64,
@@ -63,7 +78,6 @@ export const buttonTheme = defineStyleConfig({
       },
       _hover: {
         backgroundColor: "white",
-        border: "2px solid",
         borderColor: "brand.800",
         boxShadow: "0 1 1.5 0 rgba(217, 107, 39, 0.18)",
         color: "gray.700",

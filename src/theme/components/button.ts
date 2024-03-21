@@ -26,7 +26,7 @@ export const buttonTheme = defineStyleConfig({
   },
   variants: {
     primary: {
-      backgroundColor: "primary.600",
+      backgroundColor: "brand.800",
       color: "white",
       // TODO: Refactor setting boxShadow tokens
       boxShadow: "0 1.5 1.5 0 rgba(35, 78, 82, 0.08)",

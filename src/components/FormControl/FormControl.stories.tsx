@@ -7,6 +7,7 @@ import { FormLabel } from "./FormLabel";
 import { Input } from "../Input";
 import { Select as FormControlSelect } from "../Select";
 import { theme } from "../../theme";
+import { expect, userEvent, within } from "@storybook/test";
 
 const meta = {
   title: "Components/Form Control",
@@ -72,6 +73,7 @@ export const Select: Story = {
   },
   render: (args) => (
     <FormControl
+      data-testid="select-component"
       id="select-component"
       // Props should reference args, otherwise changes to StoryBook controls will not be reflected
       isRequired={args.isRequired}
@@ -79,11 +81,28 @@ export const Select: Story = {
     >
       <FormLabel>Select Label</FormLabel>
       <FormControlSelect placeholder="Placeholder Text">
-        <option value="option1">Option 1</option>
+        <option data-testid="option1" value="option1">
+          Option 1
+        </option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
       </FormControlSelect>
       <FormErrorMessage>This is an error message.</FormErrorMessage>
     </FormControl>
   ),
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement);
+
+    await step("Click into select", async () => {
+      await userEvent.click(canvas.getByTestId("select-component"));
+    });
+    await step("Click on option 1", async () => {
+      await userEvent.click(canvas.getByTestId("option1"));
+    });
+    await step("Check that select has changed", async () => {
+      await expect(canvas.getByTestId("select-component")).toHaveTextContent(
+        /Option 1/,
+      );
+    });
+  },
 };

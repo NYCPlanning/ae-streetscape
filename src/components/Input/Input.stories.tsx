@@ -3,6 +3,7 @@ import { chakra } from "@chakra-ui/system";
 import { getThemingArgTypes } from "@chakra-ui/storybook-addon";
 import { Input } from "./Input";
 import { theme } from "../../theme";
+import { userEvent, within } from "@storybook/test";
 
 const meta = {
   title: "Components/Input",
@@ -25,6 +26,16 @@ export const Base: Story = {
   args: {
     placeholder: "Placeholder Text",
     size: "md",
+  },
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement);
+
+    await step("Type into input", async () => {
+      await userEvent.type(
+        canvas.getByPlaceholderText(/Placeholder Text/),
+        "Input component test",
+      );
+    });
   },
 };
 

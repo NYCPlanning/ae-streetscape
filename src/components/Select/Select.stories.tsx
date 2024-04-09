@@ -3,6 +3,7 @@ import { chakra } from "@chakra-ui/system";
 import { getThemingArgTypes } from "@chakra-ui/storybook-addon";
 import { Select } from "./Select";
 import { theme } from "../../theme";
+import { userEvent, within } from "@storybook/test";
 
 const meta = {
   title: "Components/Select",
@@ -26,6 +27,12 @@ export const Base: Story = {
     placeholder: "Placeholder Text",
     size: "md",
     variant: "base",
+  },
+  // Test for user click
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByText(/Placeholder Text/));
   },
 };
 

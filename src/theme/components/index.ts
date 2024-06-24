@@ -7,6 +7,7 @@ import { formControlTheme } from "./form-control";
 import { formLabelTheme } from "./form-label";
 import { formErrorTheme } from "./form-error";
 import { selectTheme } from "./select";
+import { closeButtonTheme } from "./close-button";
 
 export const components = {
   Accordion: accordionTheme,
@@ -18,4 +19,5 @@ export const components = {
   FormError: formErrorTheme,
   FormLabel: formLabelTheme,
   Select: selectTheme,
+  CloseButton: closeButtonTheme,
 };

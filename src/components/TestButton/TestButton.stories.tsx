@@ -14,7 +14,7 @@ type Story = StoryObj<typeof TestButton>;
 export const Basic: Story = {
   parameters: {
     design: {
-      type: "figma",
+      type: "figspec",
       url: "https://www.figma.com/design/LYHHoPop9l0jpEivk5CFzJ/Capital-Projects-Portal?node-id=1187-31505&t=pWqnOiKXpIR0NFnL-4",
     },
   },

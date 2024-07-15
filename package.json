@@ -19,7 +19,13 @@
     "watch:theme-typings": "npm run theme-typings -- --watch src/theme",
     "postinstall": "npm run theme-typings",
     "commit": "git-cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "tokens:transform_old": "token-transformer figma_tokens/design-system-old.json figma_tokens/transform/design-system-old.json",
+    "tokens:transform_new": "token-transformer figma_tokens/design-system-new.json figma_tokens/transform/design-system-new.json",
+
+    "tokens:build_cls": "style-dictionary build --config src/theme/config.json",
+    "tokens:build_simple": "node figma_tokens/build_simple.js",
+    "tokens:build_custom": "node figma_tokens/build_custom.js"
   },
   "dependencies": {
     "@chakra-ui/cli": "^2.4.1",
@@ -50,6 +56,7 @@
     "@storybook/test": "^8.0.2",
     "@storybook/test-runner": "^0.17.0",
     "@storybook/testing-library": "^0.2.0",
+    "@tokens-studio/sd-transforms": "^1.1.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
@@ -65,9 +72,11 @@
     "eslint-plugin-storybook": "^0.6.13",
     "husky": "^8.0.3",
     "inquirer": "^8.2.6",
+    "json-to-ts": "^2.1.0",
     "lint-staged": "^14.0.1",
     "prettier": "3.0.3",
     "storybook": "^7.4.1",
+    "style-dictionary": "^4.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.12",
     "vite-plugin-dts": "^3.6.0",

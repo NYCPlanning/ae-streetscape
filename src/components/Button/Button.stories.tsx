@@ -5,6 +5,7 @@ import { Button } from "./Button";
 import { ButtonGroup } from "./ButtonGroup";
 import { IconButton } from "./IconButton";
 import { theme } from "../../theme";
+//import { defineStyleConfig } from "@chakra-ui/react";
 
 const meta = {
   title: "Components/Button",
@@ -25,6 +26,12 @@ export const Primary: Story = {
     size: "md",
     children: "Primary Btn",
   },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-374&t=0imiNI8frfIDMA69-4",
+    },
+  },
 };
 
 export const Secondary: Story = {
@@ -32,6 +39,12 @@ export const Secondary: Story = {
     variant: "secondary",
     size: "md",
     children: "Secondary Btn",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-374&t=0imiNI8frfIDMA69-4",
+    },
   },
 };
 

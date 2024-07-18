@@ -30,6 +30,7 @@
     "@chakra-ui/theme-tools": "^2.1.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@storybook/addon-designs": "^7.0.9",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

@@ -30,7 +30,7 @@ export const Base: Story = {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/design/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1234&t=0imiNI8frfIDMA69-4",
+      url: "https://www.figma.com/file/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1234&t=0imiNI8frfIDMA69-4",
     },
   },
   play: async ({ canvasElement, step }) => {
@@ -54,7 +54,7 @@ export const Invalid: Story = {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/design/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1234&t=0imiNI8frfIDMA69-4",
+      url: "https://www.figma.com/file/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1234&t=0imiNI8frfIDMA69-4",
     },
   },
 };
@@ -68,7 +68,7 @@ export const Disabled: Story = {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/design/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1234&t=0imiNI8frfIDMA69-4",
+      url: "https://www.figma.com/file/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1234&t=0imiNI8frfIDMA69-4",
     },
   },
 };

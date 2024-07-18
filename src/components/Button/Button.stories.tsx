@@ -29,7 +29,7 @@ export const Primary: Story = {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/design/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-374&t=0imiNI8frfIDMA69-4",
+      url: "https://www.figma.com/file/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-374&t=0imiNI8frfIDMA69-4",
     },
   },
 };
@@ -43,7 +43,7 @@ export const Secondary: Story = {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/design/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-374&t=0imiNI8frfIDMA69-4",
+      url: "https://www.figma.com/file/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-374&t=0imiNI8frfIDMA69-4",
     },
   },
 };

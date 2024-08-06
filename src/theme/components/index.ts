@@ -9,6 +9,7 @@ import { formErrorTheme } from "./form-error";
 import { selectTheme } from "./select";
 import { closeButtonTheme } from "./close-button";
 import { drawerTheme } from "./drawer";
+import { tableTheme } from "./table";
 
 export const components = {
   Accordion: accordionTheme,
@@ -22,4 +23,5 @@ export const components = {
   Select: selectTheme,
   CloseButton: closeButtonTheme,
   Drawer: drawerTheme,
+  Table: tableTheme,
 };

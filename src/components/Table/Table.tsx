@@ -4,6 +4,7 @@ import {
   Tbody as ChakraTbody,
   Tfoot as ChakraTfoot,
   Tr as ChakraTr,
+  Th as ChakraTh,
   Td as ChakraTd,
   TableCaption as ChakraTableCaption,
   TableContainer as ChakraTableContainer,
@@ -14,6 +15,7 @@ import type {
   TableBodyProps as ChakraTableBodyProps,
   TableFooterProps as ChakraTableFooterProps,
   TableRowProps as ChakraTableRowProps,
+  TableColumnHeaderProps as ChakraTableColumnHeaderProps,
   TableCellProps as ChakraTableCellProps,
   TableCaptionProps as ChakraTableCaptionProps,
   TableContainerProps as ChakraTableContainerProps,
@@ -33,6 +35,9 @@ export interface TableFooterProps extends ChakraTableFooterProps {}
 
 export const Tr = ChakraTr;
 export interface TableRowProps extends ChakraTableRowProps {}
+
+export const Th = ChakraTh;
+export interface TableColumnHeaderProps extends ChakraTableColumnHeaderProps {}
 
 export const Td = ChakraTd;
 export interface TableCellProps extends ChakraTableCellProps {}

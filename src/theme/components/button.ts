@@ -8,6 +8,11 @@ export const buttonTheme = defineStyleConfig({
     whiteSpace: "normal",
   },
   sizes: {
+    xs: {
+      fontSize: "xs",
+      minH: 10,
+      minW: 10,
+    },
     sm: {
       fontSize: "sm",
       minH: 11,

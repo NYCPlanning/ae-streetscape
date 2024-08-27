@@ -30,31 +30,22 @@ export const Base: Story = {
   args: {
     placement: "bottom",
     isOpen: false,
-    onClose: () => {
-      return;
-    },
+    onClose: () => {},
     children: "Content here",
   },
   render: function Render(args) {
-    const [{ onClose }, updateArgs] = useArgs();
-    function onClick() {
-      updateArgs({ isOpen: true });
+    const [{ isOpen }, updateArgs] = useArgs();
+    function onClose() {
+      updateArgs({ isOpen: !isOpen });
     }
     const btnRef = useRef(null);
 
     return (
       <>
-        <Button ref={btnRef} onClick={onClick}>
+        <Button ref={btnRef} onClick={onClose}>
           Open
         </Button>
-        <Drawer
-          {...args}
-          onClose={() => {
-            onClose();
-            updateArgs({ isOpen: false });
-          }}
-          finalFocusRef={btnRef}
-        >
+        <Drawer {...args} onClose={onClose} finalFocusRef={btnRef}>
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />

@@ -29,42 +29,29 @@ type Story = StoryObj<typeof meta>;
 export const Base: Story = {
   args: {
     isOpen: false,
-    onClose: () => {
-      return;
-    },
     children: "Lorem ipsum odor amet, consectetuer adipiscing elit.",
     isCentered: true,
   },
   render: function Render(args) {
-    const [{ onClose }, updateArgs] = useArgs();
-    function onClick() {
-      updateArgs({ isOpen: !args.isOpen });
+    const [{ isOpen }, updateArgs] = useArgs();
+    function toggleOpen() {
+      updateArgs({ isOpen: !isOpen });
     }
     const btnRef = useRef(null);
 
     return (
       <>
-        <Button ref={btnRef} onClick={onClick}>
+        <Button ref={btnRef} onClick={toggleOpen}>
           Open
         </Button>
-        <Modal
-          {...args}
-          onClose={() => {
-            onClose();
-            updateArgs({ isOpen: !args.isOpen });
-          }}
-          finalFocusRef={btnRef}
-        >
+        <Modal {...args} onClose={toggleOpen} finalFocusRef={btnRef}>
           <ModalOverlay />
           <ModalContent>
             <ModalHeader>Modal Title</ModalHeader>
             <ModalCloseButton />
             <ModalBody>{args.children}</ModalBody>
             <ModalFooter>
-              <Button
-                variant="primary"
-                onClick={() => updateArgs({ isOpen: !args.isOpen })}
-              >
+              <Button variant="primary" onClick={toggleOpen}>
                 Close
               </Button>
               <Button variant="secondary">Secondary action</Button>

@@ -35,6 +35,14 @@ export const Secondary: Story = {
   },
 };
 
+export const Tertiary: Story = {
+  args: {
+    variant: "tertiary",
+    size: "md",
+    children: " Tertiary Btn",
+  },
+};
+
 export const WithButtonGroup = () => (
   <ButtonGroup isAttached={true} variant={"secondary"}>
     <Button>Save</Button>

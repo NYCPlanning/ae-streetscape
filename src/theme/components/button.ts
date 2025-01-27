@@ -97,6 +97,24 @@ export const buttonTheme = defineStyleConfig({
         textDecorationLine: "underline",
       },
     },
+    tertiary: {
+      padding: 0,
+      height: "auto",
+      lineHeight: "normal",
+      verticalAlign: "baseline",
+      backgroundColor: "white",
+      color: "primary.500",
+      fontWeight: "medium",
+      textDecoration: "underline",
+      _hover: {
+        _disabled: {
+          pointerEvents: "none",
+        },
+      },
+      _active: {
+        color: "primary.500",
+      },
+    },
   },
   defaultProps: {
     variant: "primary",

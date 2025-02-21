@@ -49,6 +49,14 @@ export const buttonTheme = defineStyleConfig({
         color: "gray.700",
         fontWeight: "medium",
       },
+      _focus: {
+        backgroundColor: "brand.50",
+        border: "1px solid",
+        borderColor: "brand.800",
+        boxShadow: "0 1 1.5 0 rgba(217, 107, 39, 0.18)",
+        color: "gray.700",
+        fontWeight: "medium",
+      },
       _active: {
         backgroundColor: "primary.500",
         border: "none",
@@ -82,6 +90,13 @@ export const buttonTheme = defineStyleConfig({
         pointerEvents: "none",
       },
       _hover: {
+        backgroundColor: "white",
+        borderColor: "brand.800",
+        boxShadow: "0 1 1.5 0 rgba(217, 107, 39, 0.18)",
+        color: "gray.700",
+        fontWeight: "medium",
+      },
+      _focus: {
         backgroundColor: "white",
         borderColor: "brand.800",
         boxShadow: "0 1 1.5 0 rgba(217, 107, 39, 0.18)",

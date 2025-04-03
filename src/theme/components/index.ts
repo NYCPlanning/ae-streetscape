@@ -3,6 +3,7 @@ import { buttonTheme } from "./button";
 import { checkboxTheme } from "./checkbox";
 import { switchTheme } from "./switch";
 import { inputTheme } from "./input";
+import { numberInputTheme } from "./number-input";
 import { formControlTheme } from "./form-control";
 import { formLabelTheme } from "./form-label";
 import { formErrorTheme } from "./form-error";
@@ -18,6 +19,7 @@ export const components = {
   Checkbox: checkboxTheme,
   Switch: switchTheme,
   Input: inputTheme,
+  NumberInput: numberInputTheme,
   Form: formControlTheme,
   FormError: formErrorTheme,
   FormLabel: formLabelTheme,

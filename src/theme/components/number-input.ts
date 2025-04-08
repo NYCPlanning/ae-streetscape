@@ -3,29 +3,15 @@ import {
   createMultiStyleConfigHelpers,
   defineStyle,
 } from "@chakra-ui/styled-system";
+import { inputTheme } from "./input";
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys);
 
 const baseStyle = definePartsStyle({
-  addon: {
-    borderRadius: "base",
-    px: 3,
-    py: 2,
-  },
+  addon: inputTheme.baseStyle?.addon,
   field: {
-    // Set default width to full (100%) so input takes width of parent. Chakra default theme does this as well.
-    background: "white",
-    border: "1px solid",
-    borderColor: "gray.400",
-    borderRadius: "base",
-    color: "gray.600",
-    py: 2,
-    px: 3,
-    width: "full",
-    _hover: {
-      borderColor: "brand.800",
-    },
+    ...inputTheme.baseStyle?.field,
     _invalid: {
       outline: 0,
       border: 0,
@@ -37,11 +23,6 @@ const baseStyle = definePartsStyle({
       border: 0,
       ring: "2px",
       ringColor: "state.focus",
-    },
-    _disabled: {
-      border: "1px solid",
-      borderColor: "gray.400",
-      background: "gray.100",
     },
   },
 });
@@ -61,15 +42,15 @@ const stepper = defineStyle({
 
 const sizes = {
   lg: definePartsStyle({
-    field: { fontSize: "md", height: 12 },
+    ...inputTheme.sizes?.lg,
     stepper,
   }),
   md: definePartsStyle({
-    field: { fontSize: "sm", height: 10 },
+    ...inputTheme.sizes?.md,
     stepper,
   }),
   sm: definePartsStyle({
-    field: { fontSize: "sm", height: 8 },
+    ...inputTheme.sizes?.sm,
     stepper,
   }),
 };
@@ -77,11 +58,6 @@ const sizes = {
 export const numberInputTheme = defineMultiStyleConfig({
   baseStyle,
   sizes,
-  variants: {
-    base: {},
-  },
-  defaultProps: {
-    size: "md",
-    variant: "base",
-  },
+  variants: inputTheme.variants,
+  defaultProps: inputTheme.defaultProps,
 });

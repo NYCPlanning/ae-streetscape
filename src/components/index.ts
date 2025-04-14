@@ -4,6 +4,7 @@ export * from "./CloseButton";
 export * from "./Checkbox";
 export * from "./Switch";
 export * from "./Input";
+export * from "./NumberInput";
 export * from "./FormControl";
 export * from "./Select";
 export * from "./Drawer";

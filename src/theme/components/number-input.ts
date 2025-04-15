@@ -8,30 +8,10 @@ import { inputTheme } from "./input";
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys);
 
-const baseStyle = definePartsStyle({
-  addon: inputTheme.baseStyle?.addon,
-  field: {
-    ...inputTheme.baseStyle?.field,
-    _invalid: {
-      outline: 0,
-      border: 0,
-      ring: "2px",
-      ringColor: "state.error",
-    },
-    _focusVisible: {
-      outline: 0,
-      border: 0,
-      ring: "2px",
-      ringColor: "state.focus",
-    },
-  },
-});
-
 const stepper = defineStyle({
   margin: 0.25,
   paddingX: 2,
   fontSize: "xs",
-  backgroundColor: "gray.100",
   _odd: {
     borderTopRightRadius: "base",
   },
@@ -56,7 +36,7 @@ const sizes = {
 };
 
 export const numberInputTheme = defineMultiStyleConfig({
-  baseStyle,
+  baseStyle: inputTheme.baseStyle,
   sizes,
   variants: inputTheme.variants,
   defaultProps: inputTheme.defaultProps,

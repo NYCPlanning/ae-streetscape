@@ -1,5 +1,6 @@
 export * from "./Accordion";
 export * from "./Button";
+export * from "./CancellableSelect";
 export * from "./CloseButton";
 export * from "./Checkbox";
 export * from "./Switch";

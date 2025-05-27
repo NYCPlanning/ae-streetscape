@@ -54,12 +54,21 @@ const sizes = {
   },
 };
 
+const variants = {
+  base: {},
+  withRightPadding: {
+    ...baseStyle,
+    field: {
+      ...baseStyle.field,
+      paddingRight: 16,
+    },
+  },
+};
+
 export const selectTheme = defineMultiStyleConfig({
   baseStyle,
   sizes,
-  variants: {
-    base: {},
-  },
+  variants,
   defaultProps: {
     size: "md",
     variant: "base",

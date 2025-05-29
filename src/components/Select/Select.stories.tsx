@@ -80,8 +80,8 @@ export const Cancellable: Story = {
   render: function Render(args) {
     const [{ value }, updateArgs] = useArgs();
 
-    function handleChange(event: React.ChangeEvent<HTMLSelectElement>) {
-      updateArgs({ value: event.target.value });
+    function handleChange(event?: React.ChangeEvent<HTMLSelectElement>) {
+      updateArgs({ value: event?.target.value });
     }
 
     return (

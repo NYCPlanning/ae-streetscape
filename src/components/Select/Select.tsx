@@ -1,8 +1,7 @@
-import { Select as ChakraSelect } from "@chakra-ui/react";
+import { Select as ChakraSelect, Flex } from "@chakra-ui/react";
 import type { SelectProps as ChakraSelectProps } from "@chakra-ui/react";
 import { IconButton } from "../Button";
 import { CloseIcon } from "@chakra-ui/icons";
-import { FormControl } from "../FormControl";
 
 export interface SelectProps extends ChakraSelectProps {
   isCancellable?: boolean;
@@ -27,7 +26,7 @@ export function Select(props: SelectProps) {
   }
 
   return (
-    <FormControl>
+    <Flex pos={"relative"}>
       <ChakraSelect
         {...rest}
         variant={value ? "withRightPadding" : "base"}
@@ -76,6 +75,6 @@ export function Select(props: SelectProps) {
           }
         />
       )}
-    </FormControl>
+    </Flex>
   );
 }

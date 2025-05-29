@@ -5,6 +5,7 @@ import { CloseIcon } from "@chakra-ui/icons";
 
 export interface SelectProps extends ChakraSelectProps {
   isCancellable?: boolean;
+  onChange?: (event?: React.ChangeEvent<HTMLSelectElement>) => void;
   handleCancel?: () => void;
 }
 
@@ -13,7 +14,10 @@ export function Select(props: SelectProps) {
     children,
     isCancellable = false,
     value = undefined,
-    handleCancel = () => null,
+    onChange = () => {},
+    handleCancel = () => {
+      onChange();
+    },
     ...rest
   } = props;
 
@@ -31,6 +35,7 @@ export function Select(props: SelectProps) {
         {...rest}
         variant={value ? "withRightPadding" : "base"}
         value={value}
+        onChange={onChange}
       >
         {children}
       </ChakraSelect>

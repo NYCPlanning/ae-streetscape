@@ -1,4 +1,3 @@
-// import { defineStyleConfig } from "@chakra-ui/react";
 import { selectAnatomy as parts } from "@chakra-ui/anatomy";
 import { createMultiStyleConfigHelpers } from "@chakra-ui/styled-system";
 import { inputTheme } from "./input";
@@ -23,6 +22,9 @@ const baseStyle = definePartsStyle({
     ...inputTheme.baseStyle?.field,
     appearance: "none",
     bg: "white",
+    "&[data-is-cancellable=true]": {
+      paddingRight: 16,
+    },
   },
 });
 
@@ -54,21 +56,12 @@ const sizes = {
   },
 };
 
-const variants = {
-  base: {},
-  withRightPadding: {
-    ...baseStyle,
-    field: {
-      ...baseStyle.field,
-      paddingRight: 16,
-    },
-  },
-};
-
 export const selectTheme = defineMultiStyleConfig({
   baseStyle,
   sizes,
-  variants,
+  variants: {
+    base: {},
+  },
   defaultProps: {
     size: "md",
     variant: "base",

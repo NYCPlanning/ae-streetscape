@@ -12,7 +12,7 @@ export interface SelectProps extends ChakraSelectProps {
 export function Select(props: SelectProps) {
   const {
     children,
-    isCancellable = false,
+    isCancellable = true,
     value = undefined,
     onChange = () => {},
     handleCancel = () => {
@@ -33,9 +33,9 @@ export function Select(props: SelectProps) {
     <Flex pos={"relative"}>
       <ChakraSelect
         {...rest}
-        variant={value ? "withRightPadding" : "base"}
         value={value}
         onChange={onChange}
+        data-is-cancellable={isCancellable && value !== ""}
       >
         {children}
       </ChakraSelect>

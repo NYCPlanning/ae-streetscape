@@ -30,7 +30,11 @@ export function Select(props: SelectProps) {
   }
 
   return (
-    <Flex pos={"relative"}>
+    <Flex
+      pos={"relative"}
+      alignItems={"center"}
+      justifyContent={"space-between"}
+    >
       <ChakraSelect
         {...rest}
         value={value}
@@ -43,30 +47,27 @@ export function Select(props: SelectProps) {
         <IconButton
           aria-label={`Clear`}
           _hover={{
-            border: 0,
-            svg: {
-              backgroundColor: "gray.200",
-            },
+            borderColor: "teal",
+            borderWidth: "1px",
           }}
           _focus={{
-            border: 0,
-            svg: {
-              backgroundColor: "gray.200",
-            },
+            borderColor: "teal",
+            borderWidth: "1px",
           }}
           _active={{
-            border: 0,
+            borderColor: "teal",
+            borderWidth: "1px",
           }}
           pos={"absolute"}
           minH={"unset"}
           minW={"unset"}
           height={"min-content"}
           width={"min-content"}
-          bottom={2}
           right={10}
           cursor={"pointer"}
           bg={"transparent"}
           color={"inherit"}
+          display={"flex"}
           onClick={() => {
             handleCancel();
           }}

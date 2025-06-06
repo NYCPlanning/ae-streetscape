@@ -21,14 +21,6 @@ export function Select(props: SelectProps) {
     ...rest
   } = props;
 
-  if (!isCancellable) {
-    return (
-      <ChakraSelect {...rest} value={value}>
-        {children}
-      </ChakraSelect>
-    );
-  }
-
   return (
     <Flex
       pos={"relative"}
@@ -43,7 +35,7 @@ export function Select(props: SelectProps) {
       >
         {children}
       </ChakraSelect>
-      {value && (
+      {value && isCancellable ? (
         <IconButton
           aria-label={`Clear`}
           _hover={{
@@ -80,7 +72,7 @@ export function Select(props: SelectProps) {
             />
           }
         />
-      )}
+      ) : null}
     </Flex>
   );
 }

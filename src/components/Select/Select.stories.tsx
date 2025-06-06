@@ -41,7 +41,6 @@ export const Base: Story = {
   },
   render: function Render(args) {
     const [{ value }, updateArgs] = useArgs();
-
     function handleChange(event?: React.ChangeEvent<HTMLSelectElement>) {
       updateArgs({ value: event?.target.value });
     }
@@ -61,6 +60,7 @@ export const Invalid: Story = {
     ...Base.args,
     isInvalid: true,
   },
+  render: Base.render,
 };
 
 export const Disabled: Story = {
@@ -68,6 +68,7 @@ export const Disabled: Story = {
     ...Base.args,
     isDisabled: true,
   },
+  render: Base.render,
 };
 
 export const NotCancellable: Story = {
@@ -77,4 +78,5 @@ export const NotCancellable: Story = {
     placeholder:
       "You can disable showing the cancel button by passing false to the isCancellable prop.",
   },
+  render: Base.render,
 };

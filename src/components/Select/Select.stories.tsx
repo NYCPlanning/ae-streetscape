@@ -54,6 +54,12 @@ export const Base: Story = {
       ></Select>
     );
   },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1585&t=0imiNI8frfIDMA69-4",
+    },
+  },
 };
 
 export const Invalid: Story = {
@@ -61,12 +67,24 @@ export const Invalid: Story = {
     ...Base.args,
     isInvalid: true,
   },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1585&t=0imiNI8frfIDMA69-4",
+    },
+  },
 };
 
 export const Disabled: Story = {
   args: {
     ...Base.args,
     isDisabled: true,
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/yKCsuZxvSyAmdxaziIU2jS/Chakra-UI-Figma-Kit-for-DCP?node-id=441-1585&t=0imiNI8frfIDMA69-4",
+    },
   },
 };
 

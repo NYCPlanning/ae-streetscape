@@ -12,6 +12,7 @@ import { closeButtonTheme } from "./close-button";
 import { drawerTheme } from "./drawer";
 import { tableTheme } from "./table";
 import { modalTheme } from "./modal";
+import { skeletonTheme } from "./skeleton";
 
 export const components = {
   Accordion: accordionTheme,
@@ -28,4 +29,5 @@ export const components = {
   Drawer: drawerTheme,
   Table: tableTheme,
   Modal: modalTheme,
+  Skeleton: skeletonTheme,
 };

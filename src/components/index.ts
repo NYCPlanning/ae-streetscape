@@ -11,3 +11,4 @@ export * from "./Drawer";
 export * from "./Table";
 export * from "./Transitions";
 export * from "./Modal";
+export * from "./Skeleton";

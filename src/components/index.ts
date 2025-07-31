@@ -8,6 +8,7 @@ export * from "./NumberInput";
 export * from "./FormControl";
 export * from "./Select";
 export * from "./Drawer";
+export * from "./Tabs";
 export * from "./Table";
 export * from "./Transitions";
 export * from "./Modal";

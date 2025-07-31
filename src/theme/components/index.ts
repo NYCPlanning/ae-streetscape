@@ -11,6 +11,7 @@ import { selectTheme } from "./select";
 import { closeButtonTheme } from "./close-button";
 import { drawerTheme } from "./drawer";
 import { tableTheme } from "./table";
+import { tabsTheme } from "./tabs";
 import { modalTheme } from "./modal";
 import { skeletonTheme } from "./skeleton";
 
@@ -28,6 +29,7 @@ export const components = {
   CloseButton: closeButtonTheme,
   Drawer: drawerTheme,
   Table: tableTheme,
+  Tabs: tabsTheme,
   Modal: modalTheme,
   Skeleton: skeletonTheme,
 };

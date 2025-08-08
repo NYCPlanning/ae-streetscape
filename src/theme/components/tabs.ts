@@ -29,7 +29,7 @@ const baseStyleTab = defineStyle((props) => {
     fontSize: "sm",
     _focusVisible: {
       zIndex: 1,
-      boxShadow: "outline",
+      boxShadow: "0 0 0 3px rgba(66, 153, 225, 0.6)",
     },
     _disabled: {
       cursor: "not-allowed",
@@ -57,6 +57,7 @@ const baseStyleTablist = defineStyle((props) => {
   return {
     justifyContent: alignments[align],
     flexDirection: orientation === "vertical" ? "column" : "row",
+    boxShadow: "0 1px 0 0 rgba(0, 0, 0, 0.08)",
   };
 });
 

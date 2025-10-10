@@ -14,3 +14,4 @@ export * from "./Transitions";
 export * from "./Modal";
 export * from "./Skeleton";
 export * from "./Tooltip";
+export * from "./Tag";

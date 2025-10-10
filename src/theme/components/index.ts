@@ -15,6 +15,7 @@ import { tabsTheme } from "./tabs";
 import { modalTheme } from "./modal";
 import { skeletonTheme } from "./skeleton";
 import { tooltipTheme } from "./tooltip";
+import { tagTheme } from "./tag";
 
 export const components = {
   Accordion: accordionTheme,
@@ -34,4 +35,5 @@ export const components = {
   Modal: modalTheme,
   Skeleton: skeletonTheme,
   Tooltip: tooltipTheme,
+  Tag: tagTheme,
 };

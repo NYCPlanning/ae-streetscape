@@ -11,9 +11,10 @@ const baseStyle = definePartsStyle({
     ...chakraTagTheme.baseStyle?.container,
     bg: "gray.100",
     color: "gray.600",
-    py: 1,
+    minH: 6,
     px: 2,
     fontWeight: 400,
+    fontSize: "sm",
   },
 });
 

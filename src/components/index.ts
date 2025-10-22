@@ -6,6 +6,7 @@ export * from "./Switch";
 export * from "./Input";
 export * from "./NumberInput";
 export * from "./FormControl";
+export * from "./Icon";
 export * from "./Select";
 export * from "./Drawer";
 export * from "./Tabs";

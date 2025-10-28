@@ -8,8 +8,12 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
+      entryRoot: "src",
+      outDir: "dist",
       exclude: ["src/**/*.stories.@(js|jsx|mjs|ts|tsx|mdx)"],
       insertTypesEntry: true,
+      // that inlines imports to a single bundled .d.ts
+      rollupTypes: true,
     }),
     externalizeDeps(),
   ],
@@ -19,6 +23,19 @@ export default defineConfig({
       entry: resolve(__dirname, "src/index.ts"),
       formats: ["es"],
       fileName: "index",
+    },
+    rollupOptions: {
+      external: [
+        "react",
+        "react-dom",
+        "@chakra-ui/react",
+        "@chakra-ui/icons",
+        "@chakra-ui/layout",
+        "@chakra-ui/media-query",
+        "@emotion/react",
+        "@emotion/styled",
+        "framer-motion",
+      ],
     },
   },
 });

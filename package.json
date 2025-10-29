@@ -1,6 +1,6 @@
 {
   "name": "@nycplanning/streetscape",
-  "version": "0.19.1-0",
+  "version": "0.19.2-0",
   "type": "module",
   "main": "dist/index",
   "types": "dist/index.d.ts",

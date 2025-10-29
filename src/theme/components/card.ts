@@ -8,6 +8,7 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const variants = {
   ...chakraCardTheme?.variants,
   calm: definePartsStyle({
+    ...chakraCardTheme?.variants?.unstyled,
     container: {
       padding: "0.75rem",
       borderRadius: "0.5rem",

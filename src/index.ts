@@ -1,5 +1,6 @@
 import { theme } from "./theme";
 import { StreetscapeProvider } from "./StreetscapeProvider";
+export * from "./components";
 
 export * from "@chakra-ui/layout";
 export * from "@chakra-ui/media-query";

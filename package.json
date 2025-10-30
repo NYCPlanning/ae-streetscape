@@ -23,13 +23,13 @@
   },
   "dependencies": {
     "@chakra-ui/cli": "^2.4.1",
-    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/icons": "^2.2.4",
     "@chakra-ui/layout": "^2.3.1",
     "@chakra-ui/media-query": "^3.3.0",
     "@chakra-ui/react": "^2.8.1",
-    "@chakra-ui/theme-tools": "^2.1.1",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
+    "@chakra-ui/theme-tools": "^2.2.6",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -57,22 +57,22 @@
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
     "@vitejs/plugin-react": "^4.0.3",
-    "commitizen": "^4.3.0",
+    "commitizen": "^4.3.1",
     "concurrently": "^8.2.1",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.13",
     "husky": "^8.0.3",
     "inquirer": "^8.2.6",
     "lint-staged": "^14.0.1",
-    "prettier": "3.0.3",
+    "prettier": "^3.6.2",
     "storybook": "7.6.20",
-    "typescript": "^5.0.2",
+    "typescript": "^5.9.3",
     "vite": "^4.5.3",
-    "vite-plugin-dts": "^4.0.0",
+    "vite-plugin-dts": "^4.5.4",
     "vite-plugin-externalize-deps": "^0.7.0"
   },
   "lint-staged": {
@@ -85,5 +85,8 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
+  },
+  "engines": {
+    "node": "20.x"
   }
 }

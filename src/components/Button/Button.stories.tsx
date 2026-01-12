@@ -72,3 +72,19 @@ export const WithButtonGroupAndIcons = () => (
     <IconButton variant={"secondary"} aria-label="Add" icon={<MinusIcon />} />
   </ButtonGroup>
 );
+
+export const AdminBoundaryTypeSelector = () => (
+  <ButtonGroup
+    variant={"adminBoundaryTypeSelector"}
+    size={"sm"}
+    boxShadow={
+      "0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
+    }
+    spacing={0}
+    borderRadius={"lg"}
+  >
+    <Button isActive={true}>Community Districts</Button>
+    <Button>City Council</Button>
+    <Button>Boroughs</Button>
+  </ButtonGroup>
+);

@@ -140,6 +140,19 @@ export const buttonTheme = defineStyleConfig({
         color: "primary.500",
       },
     },
+    adminBoundaryTypeSelector: {
+      borderRadius: "lg",
+      boxShadow: 0,
+      color: "gray.600",
+      px: 4,
+      py: 3,
+      _active: {
+        color: "primary.600",
+        backgroundColor: "primary.50",
+        border: "1px solid",
+        borderRadius: "lg",
+      },
+    },
   },
   defaultProps: {
     variant: "primary",

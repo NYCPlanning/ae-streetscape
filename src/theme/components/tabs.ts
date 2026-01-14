@@ -74,6 +74,29 @@ const baseStyle = definePartsStyle((props) => ({
 
 const variants = {
   base: {},
+  mapControl: definePartsStyle({
+    root: {
+      boxShadow:
+        "0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      borderRadius: "lg",
+    },
+    tab: {
+      borderRadius: "lg",
+      boxShadow: 0,
+      color: "gray.600",
+      px: 4,
+      py: 3,
+      fontWeight: 400,
+      _selected: {
+        paddingTop: 3,
+        color: "primary.600",
+        backgroundColor: "primary.50",
+        border: "1px solid",
+        borderRadius: "lg",
+        fontWeight: 400,
+      },
+    },
+  }),
 };
 
 export const tabsTheme = defineMultiStyleConfig({

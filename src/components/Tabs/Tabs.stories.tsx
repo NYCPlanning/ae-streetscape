@@ -42,3 +42,20 @@ export const Base: Story = {
     return <Tabs {...args} />;
   },
 };
+
+export const MapControl: Story = {
+  args: {
+    children: (
+      <>
+        <TabList key={"TabList"}>
+          <Tab key={"Community Districts"}>Community Districts</Tab>
+          <Tab key={"City Council"}>City Council</Tab>
+          <Tab key={"Boroughs"}>Boroughs</Tab>
+        </TabList>
+      </>
+    ),
+  },
+  render: function Render(args) {
+    return <Tabs isFitted variant={"mapControl"} {...args} />;
+  },
+};

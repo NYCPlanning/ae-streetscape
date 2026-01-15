@@ -81,12 +81,27 @@ const variants = {
       borderRadius: "lg",
     },
     tab: {
-      borderRadius: "lg",
+      borderRadius: 0,
       boxShadow: 0,
       color: "gray.600",
       px: 4,
       py: 3,
       fontWeight: 400,
+      borderRight: "1px solid",
+      borderRightColor: "gray.300",
+      _first: {
+        borderLeftRadius: "lg",
+      },
+      _last: {
+        borderRight: "none",
+        borderRadius: "lg",
+        _selected: {
+          border: "1px solid",
+        },
+      },
+      "button:has(+ &[aria-selected='true'])": {
+        borderRight: 0,
+      },
       _selected: {
         paddingTop: 3,
         color: "primary.600",

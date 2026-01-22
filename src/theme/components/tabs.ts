@@ -72,6 +72,19 @@ const baseStyle = definePartsStyle((props) => ({
   tabpanel: baseStyleTabpanel,
 }));
 
+const sizes = {
+  md: {
+    tab: {
+      fontSize: "sm",
+    },
+  },
+  sm: {
+    tab: {
+      fontSize: "xs",
+    },
+  },
+};
+
 const variants = {
   base: {},
   mapControl: definePartsStyle({
@@ -117,7 +130,9 @@ const variants = {
 export const tabsTheme = defineMultiStyleConfig({
   baseStyle,
   variants,
+  sizes,
   defaultProps: {
     variant: "base",
+    size: "md",
   },
 });

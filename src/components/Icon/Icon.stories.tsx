@@ -65,6 +65,7 @@ import { EducationIcon } from "./EducationIcon";
 import { HealthIcon } from "./HealthIcon";
 import { HousingIcon } from "./HousingIcon";
 import { InfrastructureIcon } from "./InfrastructureIcon";
+import { MapPinIcon } from "./MapPinIcon";
 import { ParksIcon } from "./ParksIcon";
 import { PeopleIcon } from "./PeopleIcon";
 import { SafetyIcon } from "./SafetyIcon";
@@ -560,6 +561,20 @@ export const Base: Story = {
       >
         <p style={{ padding: "1rem" }}>LockIcon: </p>
         <LockIcon {...args} />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          margin: "1rem",
+          padding: "1rem",
+          alignItems: "center",
+          borderStyle: "solid",
+          borderRadius: "0.25rem",
+          borderWidth: "0.1rem",
+        }}
+      >
+        <p style={{ padding: "1rem" }}>MapPinIcon: </p>
+        <MapPinIcon {...args} />
       </div>
       <div
         style={{

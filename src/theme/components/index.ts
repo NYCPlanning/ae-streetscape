@@ -2,6 +2,7 @@ import { accordionTheme } from "./accordion";
 import { buttonTheme } from "./button";
 import { cardTheme } from "./card";
 import { checkboxTheme } from "./checkbox";
+import { comboboxTheme } from "./combobox";
 import { switchTheme } from "./switch";
 import { inputTheme } from "./input";
 import { numberInputTheme } from "./number-input";
@@ -23,6 +24,7 @@ export const components = {
   Button: buttonTheme,
   Card: cardTheme,
   Checkbox: checkboxTheme,
+  Combobox: comboboxTheme,
   Switch: switchTheme,
   Input: inputTheme,
   NumberInput: numberInputTheme,

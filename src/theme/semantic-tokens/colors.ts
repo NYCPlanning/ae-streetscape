@@ -1,5 +1,6 @@
 export const colors = {
   "primary.50": "teal.50",
+  "primary.100": "teal.100",
   "primary.500": "teal.500",
   "primary.600": "teal.600",
   "primary.700": "teal.700",

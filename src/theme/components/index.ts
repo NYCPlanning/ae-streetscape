@@ -12,6 +12,7 @@ import { formErrorTheme } from "./form-error";
 import { selectTheme } from "./select";
 import { closeButtonTheme } from "./close-button";
 import { drawerTheme } from "./drawer";
+import { sliderTheme } from "./slider";
 import { tableTheme } from "./table";
 import { tabsTheme } from "./tabs";
 import { modalTheme } from "./modal";
@@ -34,6 +35,7 @@ export const components = {
   Select: selectTheme,
   CloseButton: closeButtonTheme,
   Drawer: drawerTheme,
+  Slider: sliderTheme,
   Table: tableTheme,
   Tabs: tabsTheme,
   Modal: modalTheme,

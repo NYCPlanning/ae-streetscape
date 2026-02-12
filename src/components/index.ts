@@ -16,5 +16,6 @@ export * from "./Table";
 export * from "./Transitions";
 export * from "./Modal";
 export * from "./Skeleton";
+export * from "./Slider";
 export * from "./Tooltip";
 export * from "./Tag";

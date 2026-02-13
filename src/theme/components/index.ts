@@ -20,6 +20,7 @@ import { modalTheme } from "./modal";
 import { skeletonTheme } from "./skeleton";
 import { tooltipTheme } from "./tooltip";
 import { tagTheme } from "./tag";
+import { popoverTheme } from "./popover";
 
 export const components = {
   Accordion: accordionTheme,
@@ -44,4 +45,5 @@ export const components = {
   Skeleton: skeletonTheme,
   Tooltip: tooltipTheme,
   Tag: tagTheme,
+  Popover: popoverTheme,
 };

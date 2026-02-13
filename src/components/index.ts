@@ -19,3 +19,4 @@ export * from "./Skeleton";
 export * from "./Slider";
 export * from "./Tooltip";
 export * from "./Tag";
+export * from "./Popover";

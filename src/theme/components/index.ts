@@ -1,4 +1,5 @@
 import { accordionTheme } from "./accordion";
+import { alertTheme } from "./alert";
 import { buttonTheme } from "./button";
 import { cardTheme } from "./card";
 import { checkboxTheme } from "./checkbox";
@@ -20,6 +21,7 @@ import { tagTheme } from "./tag";
 
 export const components = {
   Accordion: accordionTheme,
+  Alert: alertTheme,
   Button: buttonTheme,
   Card: cardTheme,
   Checkbox: checkboxTheme,

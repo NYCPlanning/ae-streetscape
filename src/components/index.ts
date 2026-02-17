@@ -12,6 +12,7 @@ export * from "./Select";
 export * from "./Drawer";
 export * from "./Tabs";
 export * from "./Table";
+export * from "./Toast";
 export * from "./Transitions";
 export * from "./Modal";
 export * from "./Skeleton";

@@ -24,7 +24,6 @@ const baseStyleTab = defineStyle((props) => {
     paddingY: 4,
     background: "white",
     textAlign: "center",
-    fontFamily: "Helvetica Neue",
     fontWeight: 500,
     fontSize: "sm",
     _focusVisible: {
@@ -93,6 +92,9 @@ const variants = {
         "0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
       borderRadius: "lg",
       backgroundColor: "white",
+    },
+    tablist: {
+      boxShadow: "none",
     },
     tab: {
       borderRadius: 0,

@@ -54,38 +54,59 @@ export const BaseCombobox = () => {
       collection={collection}
       onInputValueChange={handleInputChange}
       inputBehavior="autohighlight"
+      width={"275px"}
     >
-      <Combobox.Control>
+      <Combobox.Control position="relative" display="flex" alignItems="center">
         <SearchIcon
-          color={"primary.600"}
+          color="primary.600"
           h={5}
           w={5}
           position="absolute"
           left="0.375rem"
+          pointerEvents="none"
         />
-        <Combobox.Input placeholder="Search by Address..." autoComplete="off" />
-        <Combobox.ClearTrigger>
+
+        <Combobox.Input
+          placeholder="Search by Address..."
+          autoComplete="off"
+          flex="1"
+          pl="2rem"
+        />
+
+        <Combobox.ClearTrigger
+          position="relative"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          right={"2rem"}
+          w="1.5rem"
+          h="100%"
+          bg="white"
+          flexShrink={0}
+        >
           <CloseIcon w={3} h={3} />
         </Combobox.ClearTrigger>
       </Combobox.Control>
-      <Combobox.Content>
-        <Text
-          style={{
-            paddingTop: 2,
-            fontSize: "sm",
-            fontWeight: "700",
-            color: "gray.700",
-          }}
-        >
-          Add Map Pin
-        </Text>
-        {collection.items.map((item) => (
-          <Combobox.Item key={item.value} item={item}>
-            <MapPinIcon h={4} w={2.5} mr={2} />
-            <Combobox.ItemText>{item.label}</Combobox.ItemText>
-          </Combobox.Item>
-        ))}
-      </Combobox.Content>
+      <Combobox.Positioner>
+        <Combobox.Content>
+          <Text
+            style={{
+              paddingTop: 2,
+              fontSize: "sm",
+              fontWeight: "700",
+              color: "gray.700",
+            }}
+          >
+            Add Map Pin
+          </Text>
+          {collection.items.map((item) => (
+            <Combobox.Item key={item.value} item={item}>
+              <MapPinIcon h={4} w={2.5} mr={2} />
+              <Combobox.ItemText>{item.label}</Combobox.ItemText>
+            </Combobox.Item>
+          ))}
+        </Combobox.Content>
+      </Combobox.Positioner>
     </Combobox.Root>
   );
 };

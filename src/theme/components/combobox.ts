@@ -55,6 +55,16 @@ const baseStyleClearTrigger = defineStyle({
   position: "absolute",
   right: 1.5,
   zIndex: 2,
+  _before: {
+    content: '""',
+    position: "absolute",
+    top: 0,
+    right: "100%",
+    width: "24px",
+    height: "100%",
+    pointerEvents: "none",
+    bgGradient: "linear(to-r, #ffffff00, #ffffff)",
+  },
 });
 
 const baseStyleContent = defineStyle({

@@ -56,7 +56,7 @@ export const BaseCombobox = () => {
       inputBehavior="autohighlight"
       width={"275px"}
     >
-      <Combobox.Control position="relative" display="flex" alignItems="center">
+      <Combobox.Control>
         <SearchIcon
           color="primary.600"
           h={5}
@@ -66,24 +66,9 @@ export const BaseCombobox = () => {
           pointerEvents="none"
         />
 
-        <Combobox.Input
-          placeholder="Search by Address..."
-          autoComplete="off"
-          flex="1"
-          pl="2rem"
-        />
+        <Combobox.Input placeholder="Search by Address..." autoComplete="off" />
 
-        <Combobox.ClearTrigger
-          position="relative"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          right={"2rem"}
-          w="1.5rem"
-          h="100%"
-          bg="white"
-          flexShrink={0}
-        >
+        <Combobox.ClearTrigger>
           <CloseIcon w={3} h={3} />
         </Combobox.ClearTrigger>
       </Combobox.Control>

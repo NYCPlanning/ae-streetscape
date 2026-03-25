@@ -55,6 +55,7 @@ const baseStyleClearTrigger = defineStyle({
   position: "absolute",
   right: 1.5,
   zIndex: 2,
+  bg: "#FFFFFF",
   _before: {
     content: '""',
     position: "absolute",

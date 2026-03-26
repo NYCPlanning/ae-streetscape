@@ -70,6 +70,7 @@ import { ParksIcon } from "./ParksIcon";
 import { PeopleIcon } from "./PeopleIcon";
 import { SafetyIcon } from "./SafetyIcon";
 import { TransportationIcon } from "./TransportationIcon";
+import { OtherIcon } from "./OtherIcon";
 
 const meta = {
   title: "Components/Icon",
@@ -962,6 +963,31 @@ export const Darkable: Story = {
           borderWidth: "0.1rem",
         }}
       >
+        <p style={{ padding: "1rem" }}>PeopleIcon: </p>
+        <PeopleIcon {...args} />
+      </div>
+    </div>
+  ),
+};
+
+export const CommunityBoardBudgetRequestPolicyArea: Story = {
+  args: {
+    boxSize: 6,
+    dark: false,
+  },
+  render: (args) => (
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div
+        style={{
+          display: "flex",
+          margin: "1rem",
+          padding: "1rem",
+          alignItems: "center",
+          borderStyle: "solid",
+          borderRadius: "0.25rem",
+          borderWidth: "0.1rem",
+        }}
+      >
         <p style={{ padding: "1rem" }}>EducationIcon : </p>
         <EducationIcon {...args} />
       </div>
@@ -1018,8 +1044,8 @@ export const Darkable: Story = {
           borderWidth: "0.1rem",
         }}
       >
-        <p style={{ padding: "1rem" }}>ParksIcon: </p>
-        <ParksIcon {...args} />
+        <p style={{ padding: "1rem" }}>OtherIcon: </p>
+        <OtherIcon {...args} />
       </div>
       <div
         style={{
@@ -1032,8 +1058,8 @@ export const Darkable: Story = {
           borderWidth: "0.1rem",
         }}
       >
-        <p style={{ padding: "1rem" }}>PeopleIcon: </p>
-        <PeopleIcon {...args} />
+        <p style={{ padding: "1rem" }}>ParksIcon: </p>
+        <ParksIcon {...args} />
       </div>
       <div
         style={{

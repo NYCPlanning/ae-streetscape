@@ -9,3 +9,4 @@ export * from "./SafetyIcon";
 export * from "./TransportationIcon";
 export * from "./CompassIcon";
 export * from "./MapPinIcon";
+export * from "./OtherIcon";

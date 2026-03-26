@@ -28,8 +28,8 @@ const baseStyleInput = defineStyle({
   field: {
     ...inputTheme.baseStyle?.field,
     paddingInlineStart: 8,
-    fontFamily: "Public Sans, Arial",
-    fontSize: "0.75rem",
+    fontFamily: "Helvetica, Arial, san-serif",
+    fontSize: "0.875rem",
     borderRadius: "md",
     // outlineColor is required to set the color of the border when focused
     outlineColor: "primary.600",

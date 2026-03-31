@@ -3,6 +3,14 @@ import { comboboxTheme } from "../../theme/components/combobox";
 import {
   Combobox as ArkCombobox,
   useListCollection as arkUseListCollection,
+  createListCollection as arkCreateListCollection,
+  useCombobox as arkUseCombobox,
+} from "@ark-ui/react/combobox";
+import type {
+  ComboboxInputValueChangeDetails as ArkComboboxInputValueChangeDetails,
+  ListCollection as ArkListCollection,
+  ComboboxSelectionDetails as ArkComboboxSelectionDetails,
+  UseComboboxReturn as ArkUseComboboxReturn,
 } from "@ark-ui/react/combobox";
 import type { CollectionItem as ArkComboboxCollectionItemProps } from "@ark-ui/react/collection";
 
@@ -48,9 +56,18 @@ export const Combobox = {
 export interface ComboboxCollectionItemProps
   extends ArkComboboxCollectionItemProps {}
 
+export interface ComboboxInputValueChangeDetails
+  extends ArkComboboxInputValueChangeDetails {}
+export interface ListCollection extends ArkListCollection {}
+export interface ComboboxSelectionDetails extends ArkComboboxSelectionDetails {}
+export interface UseComboboxReturn
+  extends ArkUseComboboxReturn<ComboboxCollectionItemProps> {}
+
 export type ComboboxListCollectionProps = {
   label: string;
   value: string;
 };
 
 export const useListCollection = arkUseListCollection;
+export const createListCollection = arkCreateListCollection;
+export const useCombobox = arkUseCombobox;

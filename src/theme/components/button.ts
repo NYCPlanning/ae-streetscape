@@ -94,7 +94,7 @@ export const buttonTheme = defineStyleConfig({
         { borderTopWidth: "1px" },
       _disabled: {
         backgroundColor: "gray.50",
-        borderColor: "primary.600",
+        borderColor: "gray.400",
         color: "gray.700",
         opacity: 0.64,
         pointerEvents: "none",

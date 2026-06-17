@@ -1,5 +1,7 @@
 export * from "./Icon";
+export * from "./ClipboardCheckIcon";
 export * from "./EducationIcon";
+export * from "./EmailInvertedIcon";
 export * from "./HealthIcon";
 export * from "./HousingIcon";
 export * from "./InfrastructureIcon";

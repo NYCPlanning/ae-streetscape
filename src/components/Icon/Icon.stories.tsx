@@ -60,8 +60,10 @@ import {
   WarningTwoIcon,
   Icon,
 } from "./Icon";
+import { ClipboardCheckIcon } from "./ClipboardCheckIcon";
 import { CompassIcon } from "./CompassIcon";
 import { EducationIcon } from "./EducationIcon";
+import { EmailInvertedIcon } from "./EmailInvertedIcon";
 import { HealthIcon } from "./HealthIcon";
 import { HousingIcon } from "./HousingIcon";
 import { InfrastructureIcon } from "./InfrastructureIcon";
@@ -378,6 +380,20 @@ export const Base: Story = {
           borderWidth: "0.1rem",
         }}
       >
+        <p style={{ padding: "1rem" }}>ClipboardCheckIcon: </p>
+        <ClipboardCheckIcon {...args} />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          margin: "1rem",
+          padding: "1rem",
+          alignItems: "center",
+          borderStyle: "solid",
+          borderRadius: "0.25rem",
+          borderWidth: "0.1rem",
+        }}
+      >
         <p style={{ padding: "1rem" }}>CloseIcon: </p>
         <CloseIcon {...args} />
       </div>
@@ -478,6 +494,20 @@ export const Base: Story = {
       >
         <p style={{ padding: "1rem" }}>EmailIcon: </p>
         <EmailIcon {...args} />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          margin: "1rem",
+          padding: "1rem",
+          alignItems: "center",
+          borderStyle: "solid",
+          borderRadius: "0.25rem",
+          borderWidth: "0.1rem",
+        }}
+      >
+        <p style={{ padding: "1rem" }}>EmailInvertedIcon: </p>
+        <EmailInvertedIcon {...args} />
       </div>
       <div
         style={{

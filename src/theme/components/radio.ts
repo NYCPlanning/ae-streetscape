@@ -31,8 +31,8 @@ const baseStyleControl = defineStyle({
     borderColor: "primary.700",
     ".inner-dot": {
       bg: "primary.700",
-      transform: "scale(1)",
     },
+    boxShadow: "0 0 0 4px rgba(10, 83, 221, 0.20)",
   },
   _disabled: {
     borderColor: "gray.400",
@@ -41,6 +41,9 @@ const baseStyleControl = defineStyle({
     },
     ".inner-dot": {
       bg: "gray.300",
+    },
+    _hover: {
+      boxShadow: "none",
     },
   },
   _focusVisible: {

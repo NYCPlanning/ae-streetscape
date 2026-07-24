@@ -21,6 +21,7 @@ import { skeletonTheme } from "./skeleton";
 import { tooltipTheme } from "./tooltip";
 import { tagTheme } from "./tag";
 import { popoverTheme } from "./popover";
+import { radioTheme } from "./radio";
 
 export const components = {
   Accordion: accordionTheme,
@@ -46,4 +47,5 @@ export const components = {
   Tooltip: tooltipTheme,
   Tag: tagTheme,
   Popover: popoverTheme,
+  Radio: radioTheme,
 };

@@ -63,4 +63,4 @@ export {
 } from "@chakra-ui/icons";
 export type { IconProps } from "@chakra-ui/icons";
 
-export type DarkableIconProps = IconProps & { dark?: boolean };
+export type DarkableIconProps = IconProps & { dark?: boolean | string };

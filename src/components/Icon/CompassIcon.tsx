@@ -4,7 +4,7 @@ import { DarkableIconProps } from "./Icon";
 export function CompassIcon(props: DarkableIconProps) {
   return (
     <Icon viewBox="0 0 10 19" fill="none" {...props}>
-      <rect width="=10" height="19" rx="8" fill="#4A5568" />
+      <rect width="10" height="19" rx="8" fill="#4A5568" />
       <path
         d="M5 0L9.33013 9H0.669873L5 0Z"
         fill="#4A5568"

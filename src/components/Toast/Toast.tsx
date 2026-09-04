@@ -1,9 +1,12 @@
 import { useToast as useChakraToast } from "@chakra-ui/react";
-import type { UseToastOptions as UseChakraToastOptions } from "@chakra-ui/react";
+import type {
+  UseToastOptions as UseChakraToastOptions,
+  CreateToastFnReturn,
+} from "@chakra-ui/react";
 
 export interface UseToastOptions extends UseChakraToastOptions {}
 
-export function useToast(options?: UseToastOptions) {
+export function useToast(options?: UseToastOptions): CreateToastFnReturn {
   return useChakraToast({
     ...options,
     variant: "outline",

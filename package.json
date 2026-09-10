@@ -1,6 +1,6 @@
 {
   "name": "@nycplanning/streetscape",
-  "version": "0.24.0",
+  "version": "0.24.1",
   "type": "module",
   "main": "dist/index",
   "types": "dist/index.d.ts",
@@ -8,17 +8,17 @@
     "dist"
   ],
   "scripts": {
-   "dev": "concurrently \"npm:watch:*\"",
-  "watch:storybook": "storybook dev -p 6006",
-  "build": "vite build && npm run theme-typings",
-  "build-storybook": "storybook build",
-  "lint": "eslint . --ext ts,tsx,js,jsx",
-  "typecheck": "tsc",
-  "test-storybook": "test-storybook",
-  "theme-typings": "chakra-cli tokens src/index.ts --strict-token-types --strict-component-types",
-  "watch:theme-typings": "npm run theme-typings -- --watch src/theme",
-  "commit": "git-cz",
-  "prepare": "husky install"
+    "dev": "concurrently \"npm:watch:*\"",
+    "watch:storybook": "storybook dev -p 6006",
+    "build": "vite build && npm run theme-typings",
+    "build-storybook": "storybook build",
+    "lint": "eslint . --ext ts,tsx,js,jsx",
+    "typecheck": "tsc",
+    "test-storybook": "test-storybook",
+    "theme-typings": "chakra-cli tokens src/index.ts --strict-token-types --strict-component-types",
+    "watch:theme-typings": "npm run theme-typings -- --watch src/theme",
+    "commit": "git-cz",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@ark-ui/react": "^5.31.0",

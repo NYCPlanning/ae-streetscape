@@ -31,7 +31,7 @@ export const Base: Story = {
             p="40px"
             color="white"
             mt="4"
-            bg="teal.500"
+            bg="primary.500"
             rounded="md"
             shadow="md"
           >

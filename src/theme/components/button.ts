@@ -8,6 +8,11 @@ export const buttonTheme = defineStyleConfig({
     py: 3,
     whiteSpace: "normal",
     display: "inline-block",
+    _focusVisible: {
+      outline: "2px solid",
+      outlineColor: "state.focus",
+      outlineOffset: "2px",
+    },
     _before: {
       display: "block",
       content: "attr(data-label)",

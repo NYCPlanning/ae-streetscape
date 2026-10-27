@@ -47,6 +47,11 @@ const baseStyleTrack = defineStyle({
   _disabled: {
     bg: "gray.300",
   },
+  "input:focus-visible + &": {
+    outline: "2px solid",
+    outlineColor: "state.focus",
+    outlineOffset: "2px",
+  },
 });
 
 // Combine the 3 components of the switch

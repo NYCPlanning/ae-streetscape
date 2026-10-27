@@ -19,6 +19,11 @@ const baseStyleButton = defineStyle({
     ...chakraAccordionTheme.baseStyle?.button._hover,
     bg: "gray.50",
   },
+  _focusVisible: {
+    outline: "2px solid",
+    outlineColor: "state.focus",
+    outlineOffset: "2px",
+  },
 });
 
 const baseStylePanel = defineStyle({

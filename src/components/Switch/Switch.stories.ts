@@ -19,7 +19,7 @@ export const Large: Story = {
   args: {
     variant: "base",
     size: "lg",
-    isChecked: false,
+    defaultChecked: false,
     isDisabled: false,
   },
 };
@@ -28,7 +28,7 @@ export const Small: Story = {
   args: {
     variant: "base",
     size: "sm",
-    isChecked: false,
+    defaultChecked: false,
     isDisabled: false,
   },
 };
